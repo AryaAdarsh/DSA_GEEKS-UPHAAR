@@ -24,7 +24,7 @@ The issues in the existing system are:
 9. Community connect by sending invitations.
 10. Payment Gateway for donations or charity.
 
-# Demo video link: https://drive.google.com/file/d/1VH4M1OO3xBS6axi-EwXeg1OzRCo5NfHj/view?usp=sharing
+# Demo video link: https://drive.google.com/file/d/1p3VTIeyXOmAy2y_t9oAH2gQU44F6V75H/view?usp=sharing
 
 # TECHNOLOGIES USED
 Frontend:
