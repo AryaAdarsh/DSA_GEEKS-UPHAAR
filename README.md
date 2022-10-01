@@ -12,6 +12,7 @@ The issues in the existing system are:
 5. Threat to data security and redundency
 
 # OUR UPHAAR SOLUTION
+Demo vedio link: https://drive.google.com/file/d/1VH4M1OO3xBS6axi-EwXeg1OzRCo5NfHj/view?usp=sharing
 1. User friendly dashboard and introducing karma points and shoutouts to engage volunteers.
 2. Different modules for various use cases.
 3. CRUD function for campaigners and admin
