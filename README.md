@@ -23,6 +23,16 @@ The issues in the existing system are:
 9. Community connect by sending invitations.
 10. Payment Gateway for donations or charity.
 
+# TECHNOLOGIES USED
+Frontend:
+HTML, CSS, JavaScript, Bootstrap
+
+Frameworks:
+NodeJS, EJS and ExpressJS
+
+Database:
+MongoDB
+
 
 # Website screenshots
 
