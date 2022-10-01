@@ -1,0 +1,46 @@
+<%-include('./partials/header')%>
+        <!-- font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <LINK REL='STYLESHEET' HREF='/stylesheets/dashboard/dashboard_v.css' />
+</head>
+<body>
+
+    <%- include("./partials/navbar") %>
+
+        <!-- sidebar -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 leftsidebar " style="background-color: rgb(219, 219, 219, 0.5);">
+                    <br>
+                    <div class="align">
+                        <i class="fa fa-user-circle" aria-hidden="true" style="font-size:48px; text-align: center;"></i>
+                        <br><br>
+                        <h5>Campaigner1</h5>
+                        <h6>camp1@gmail.com</h6>
+                    </div>
+                </div>
+                <!-- main-content -->
+                <div class="col-md-10 leftsidebar">
+                    <h3>
+                        Events Organized
+                    </h3>
+                    <form action="/campaignc" class="float-end px-4">
+                    <input type="submit" class="btn btn-success" value="Create a campaign">
+                    </form>
+                    <br><br>
+                    <div class="row d-flex justify-content-center">
+                        <%- include("./partials/card_dash_c") %>
+                        <%- include("./partials/card_dash_c") %>
+                        <%- include("./partials/card_dash_c") %>
+                        <%- include("./partials/card_dash_c") %>
+                        <%- include("./partials/card_dash_c") %>
+                    </div>
+                    <br>
+
+                    <br>
+
+                    <%-include('./partials/footer')%>

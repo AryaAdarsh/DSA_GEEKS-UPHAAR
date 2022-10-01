@@ -1,0 +1,115 @@
+body{
+  background: linear-gradient(0deg, #f1ae9f50, #ffffff);
+}
+
+.align{
+    text-align: center;
+}
+.subheading, .sub-subheading{
+    padding-bottom: 10px;
+}
+.space{
+  font-size: 19px;
+}
+.space1{
+  margin-right: 30px;
+}
+
+#dropdown{
+    width:20px;
+    height: 20px;
+}
+.collapsible {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.collapsible:hover {
+    background-color: white;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+    text-align:justify;
+    
+    border: none;
+  }
+
+/* main content  */
+
+.invite{
+  background-color:white ;
+  font-size: 20px;
+}
+/* .card-img-top {
+  width: 18rem;
+  height: 15vw;
+  object-fit: cover;
+} */
+
+#dollar-1{
+  border-radius: 50%;
+  background: purple;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;
+  color: white;
+}
+.icon-file{
+  border-radius: 50%;
+  background: purple;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;
+  color: white;
+}
+
+.line {
+    font-family: sans-serif;
+    margin: 100px auto;
+    text-align: center;
+    color: black;
+    max-width: 600px;
+    position: relative;
+  }
+.line:before {
+    content: "";
+    display: block;
+    width: 180px;
+    height: 5px;
+    background:purple;
+    left: 65px;
+    top: 50%;
+    position: absolute;
+  }
+.card-4{
+    background-color: purple;
+}
+ /* charts */
+
+.charts{
+    display: grid;
+    grid-template-columns: 280px 2fr;
+    grid-gap: 32px;
+    width: 100%;
+    padding: 20px;
+    padding-top: 0;
+}
+
+.chart{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+  

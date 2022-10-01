@@ -1,0 +1,129 @@
+<%-include('./partials/header')%>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+<LINK REL='STYLESHEET' HREF='/stylesheets/dashboard/dashboard_v.css' />
+<style>
+    /* charts */
+
+    .charts{
+        display: grid;
+        grid-template-columns: 280px 2fr;
+        grid-gap: 32px;
+        width: 100%;
+        padding: 20px;
+        padding-top: 0;
+    }
+
+    .chart{
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+
+    }
+</style>
+</head>
+<body>
+
+<%- include("./partials/navbar") %>
+
+    <!-- sidebar -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 leftsidebar" style="background-color: rgb(219, 219, 219, 0.5);">
+                <br>
+                <div class="align">
+                    <i class="fa fa-user-circle" aria-hidden="true" style="font-size:48px; text-align: center;"></i>
+                    <br>
+                    <b>Ramu</b>
+                    <br>
+                    <b><%= email %></b>
+                </div>
+                <hr>
+                
+                <div class="heading">Reports</div><br>
+                <div class="subheading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dashboard</div>
+                <div class="subheading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Leaderboard</div>
+
+                
+            </div>
+            <!-- main-content -->
+            <div class="col-md-10 leftsidebar"><br>
+                Dashboard <i class="icon-chevron-right" style="font-size:12px;"></i> Reports
+                <!-- <h4>Here's what happening</h4><br> -->
+
+                <br>
+                <br>
+                <br>
+                <div class="invite">
+                    Have a friend?&nbsp;&nbsp;
+                    <button type="button" class="btn btn-outline-danger">Connect</button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Or Don't have a friend. Invite &nbsp;&nbsp;
+                    <button type="button" class="btn btn-outline-danger">Invite</button>
+                    <br>
+                </div>
+                <br>
+                <h3>
+                    Friendlist:
+                </h3>
+                <hr/>
+                <div class="px-2 py-4 row" style="background-color: rgb(165, 165, 165, 0.1);">
+                    <div class="card col-lg-2 col-md-4 col-sm-12 p-0 m-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Suraj Sharma</h5>
+                        </div>
+                    </div>
+                    <div class="card col-lg-2 col-md-4 col-sm-12 p-0 m-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Saumya Agarwal</h5>
+                        </div>
+                    </div>
+                    <div class="card col-lg-2 col-md-4 col-sm-12 p-0 m-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Neel Mishra</h5>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <h3>
+                    Events you have participated in:
+                </h3>
+                <hr/>
+                <div class="row d-flex justify-content-center">
+                    <%- include("./partials/card_dash_v") %>
+                    <%- include("./partials/card_dash_v") %>
+                    <%- include("./partials/card_dash_v") %>
+                </div>
+                <br><br>
+                
+                <h2>Karma Points</h2>
+                <hr/>
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <canvas id="myChart" ></canvas>
+                    </div>
+                </div>
+                
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+                <script>
+                    var xValues = ['Jan','Feb','Mar','Apr','May','June','July','Aug','Sep','Oct','Nov','Dec'];
+    
+                    new Chart("myChart", {
+                    type: "line",
+                    data: {
+                        labels: xValues,
+                        datasets: [{ 
+                        data: [10,50,10,20,150,280,180,40,140,130,140,50],
+                        borderColor: "purple",
+                        fill: false
+                        }]
+                    },
+                    options: {
+                        legend: {display: false}
+                    }
+                    });
+                </script>
+
+                <%-include('./partials/footer')%>

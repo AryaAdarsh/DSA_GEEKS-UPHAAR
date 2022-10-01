@@ -1,0 +1,112 @@
+<%-include('./partials/header')%>
+
+
+<title>Home</title>
+</head>
+
+<body>
+
+  
+<%-include('./partials/navbar')%>
+
+
+
+<main class="container">
+
+    <div class="row mt-5 main">
+      <div class="col-md-6 d-flex justify-content-center flex-1 flex-column">
+
+        <h1 class="display-3 align-items-center mt-5 text-primary animate_animated animate_backInLeft">Add a new Campaign!</h1>
+      </div>
+    </div>
+
+  </main>
+
+<main class="d-flex justify-content-center align-items-center container">
+    <form action="/action_page.php" class="card card-body add-form bg-danger text-light">
+      <div class="form-group mt-2">
+        <label for="exampleInputEmail1">Campaign Name</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          placeholder="Enter Campaign Name">
+      </div>
+      <div class="form-group mt-3">
+        <label for="exampleInputEmail1">Campaign Last Date</label>
+        <input type="datetime" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          placeholder="Enter Campaign Last Date">
+      </div>
+      <div class="form-group mt-3">
+        <label for="exampleInputEmail1">Campaign Signature Required</label>
+        <input type="datetime" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          placeholder="Number of Signature needed">
+      </div>
+      <div class="form-group mt-3">
+        <label for="exampleInputEmail1">Campaign Photo</label>
+        <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          placeholder="Enter Campaign Last Date">
+      </div>
+      <div class="form-group mt-3">
+        <label for="exampleInputEmail1">Campaign Description</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+      </div>
+      <br>
+      <div>
+            
+            <label for="exampleInpu">Volunteers Skillsets Required</label>
+            <div>
+                <br>
+              <input type="checkbox" id="scales" name="scales"
+                     checked>
+              <label for="scales">IT experience</label>
+            </div>
+        
+            <div>
+              <input type="checkbox" id="horns" name="horns">
+              <label for="horns">Video editing and videography</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="horns" name="horns">
+                <label for="horns"> Management skills</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="horns" name="horns">
+                <label for="horns">Mentor</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="horns" name="horns">
+                <label for="horns">Presentation skills using various media</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="horns" name="horns">
+                <label for="horns">Plan special events</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="horns" name="horns">
+                <label for="horns">Sign language</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="horns" name="horns">
+                <label for="horns">Operational skills</label>
+              </div>
+
+      </div>
+
+
+      <button type="submit" class="btn btn-info mt-3">Save</button>
+    </form>
+  </main>
+
+
+  <%-include('./partials/footer')%>   
+      
+    
+</body>
+
+</html>
+
